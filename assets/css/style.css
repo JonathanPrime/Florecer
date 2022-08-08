@@ -404,7 +404,9 @@ img {
 }
 
 owl-item {
-    width: 100%;
+    width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*=== caption animation ===*/
