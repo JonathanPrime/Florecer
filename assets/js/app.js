@@ -99,9 +99,9 @@ popupWhatsApp = () => {
    });
 
    /* Open pop-up in 15 seconds */
-   /* setTimeout(() => {
+   setTimeout(() => {
      popup.classList.toggle('is-active-whatsapp-popup');
-   }, 15000); */
+   }, 8000);
 
 }
 
