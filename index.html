@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Florecer - Spa de uñas</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/svg/icon.svg">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -14,7 +15,7 @@
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Harley Quinn.</a>
+            <a class="navbar-brand" href="#home"><img class="logo-design" id="img-logo" src="./assets/images/svg/logo-semi-white.svg"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,27 +26,27 @@
                         <a class="nav-link" href="#home">Inicio</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#about">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#services">Servicios</a>
                     </li>
                     <!-- <li class="nav-item">
-                        <a class="nav-link" href="#work">Work</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#resume">Resume</a>
                     </li> -->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#blog">Noticias</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">Contácto</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav flex-row">
                     <li class="nav-item">
-                        <a class="social-icon" href="https://www.instagram.com/florecerspadeunas/"><i class="ri-instagram-line"></i></a>
+                        <a class="social-icon" href="https://www.instagram.com/florecerspadeunas/" target="a_blank"><i class="ri-instagram-line"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="social-icon" href="https://www.facebook.com/florecerespadeunas"><i class="ri-facebook-line"></i></a>
+                        <a class="social-icon" href="https://www.facebook.com/florecerespadeunas"target="a_blank"><i class="ri-facebook-line"></i></a>
                     </li>
                 </ul>
             </div>
@@ -53,7 +54,7 @@
     </nav>
 
     <!--slider section start -->
-	<div class="slider_wrapper" id="home">
+	<section class="slider_wrapper" id="home">
 		<div class="owl-carousel owl-theme home_slider">
 			<div class="item">
 				<div class="slider_bg slider-1">
@@ -61,13 +62,13 @@
 						<div class="row">
 							<div class="col-md-12 col-xs-12">
 								<div class="slider_caption">
-									<div class="col-12 mx-auto" data-aos="zoom-in-up" data-aos-delay="500">
+									<!-- <div class="col-12 mx-auto" data-aos="zoom-in-up" data-aos-delay="500">
 										<img class="text-header" src="images/wallpaper/text-header-1.svg" alt="">
-									</div>
-									<div class="button_wrapper button_send">
+									</div> -->
+									<!-- <div class="button_wrapper button_send">
 										<a href="https://wa.me/573017450149" target="_blank"><img class="icon-what"
-												href="#" src="images/wallpaper/send-what.svg" alt=""></a>
-									</div>
+												href="#" src="images/wallpaper/send-wha.svg" alt=""></a>
+									</div> -->
 								</div>
 							</div>
 						</div>
@@ -81,13 +82,11 @@
 							<div class="col-md-12 col-xs-12">
 								<div class="slider_caption">
 									<div class="col-12 mx-auto" data-aos="zoom-in-up" data-aos-delay="500">
-										<img class="text-header-2" src="images/wallpaper/text-header-2.svg" alt="">
+										<img class="text-header-2" src="assets/images/svg/text-header.svg" alt="">
 									</div>
-									<p class="text-info-2">
-										📍 <b>Goya 1</b> Cll 163A #8C-38.<br />
-										📍 <b>Goya 2</b> Cra 8 #163-51.<br />
-										📍 <b>Goya 3</b> Cll 163 #8C-18.
-									</p>
+                                    <!-- <div class="button_wrapper button_send">
+										<a href="#services" target="_blank"><img class="icon-what" src="assets/images/svg/send-wha.svg" alt=""></a>
+									</div> -->
 								</div>
 							</div>
 						</div>
@@ -101,7 +100,7 @@
 							<div class="col-md-12 col-xs-12">
 								<div class="slider_caption">
 									<div class="col-12 mx-auto" data-aos="zoom-in-up" data-aos-delay="500">
-										<img class="text-header-3" src="images/wallpaper/text-header-3.svg" alt="">
+										<img class="text-header-3" src="assets/images/svg/text-header-2.svg" alt="">
 									</div>
 									<div class="button_wrapper">
 										<a href="#services" class="read_more ms_button">Ver más</a>
@@ -113,142 +112,146 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	<!-- slider section end -->
 
     <!-- Services -->
-    <section id="services" class="section-padding section-connector">
-        <div class="container">
+    <section id="about" class="about section-padding">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <div class="setion-title text-center" data-aos="fade-up" data-aos-delay="100">
-                        <h1>Services</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci architecto dignissimos saepe iste soluta. Aperiam exercitationem doloribus soluta.</p>
+                        <h1 class="text-script">Acerca de</h1>
+                        <h1 class="text-serif">Nosotros</h1>
+                        <p><b>Florecer</b> es un equipo de mujeres trabajadoras enfocadas en el cuidado y belleza de la mujer.</p>
                         <div class="line"></div>
                     </div>
                 </div>
             </div>
-            <div class="row gy-4 text-center">
-                <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4 text-center cards">
+                <div class="col-lg-3 col-md-5 col-sm-5 card-about" data-aos="fade-up" data-aos-delay="100">
                     <div class="service py-5 px-4 border">
                         <div class="service-icon">
-                            <i class="ri-stack-line"></i>
+                            <span class="iconify" data-icon="ic:baseline-add-reaction"></span>
                         </div>
-                        <h5 class="mt-4">Branding</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facere nihil</p>
-                        <a href="#" class="custom-link">
+                        <h5 class="mt-4">Confianza</h5>
+                        <p>Ofrecemos servicios especializados profesionales para la mujer en cuanto a manicure, pedicure, maquillaje, depilación, etc...</p>
+                        <!-- <a href="#" class="custom-link">
                             <span>Read More</span>
                             <i class="ri-arrow-right-line"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-3 col-md-5 col-sm-5 card-about" data-aos="fade-up" data-aos-delay="200">
                     <div class="service py-5 px-4 border">
                         <div class="service-icon">
-                            <i class="ri-profile-line"></i>
+                            <span class="iconify" data-icon="ic:baseline-auto-graph"></span>
                         </div>
-                        <h5 class="mt-4">UI Design</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facere nihil</p>
-                        <a href="#" class="custom-link">
+                        <h5 class="mt-4">Calidad</h5>
+                        <p>Contamos con personal capacitado para cuidar tu imagen de acuerdo a la necesidad que tu requieres.</p>
+                        <!-- <a href="#" class="custom-link">
                             <span>Read More</span>
                             <i class="ri-arrow-right-line"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-3 col-md-5 col-sm-5 card-about" data-aos="fade-up" data-aos-delay="300">
                     <div class="service py-5 px-4 border">
                         <div class="service-icon">
                             <i class="ri-camera-3-line"></i>
                         </div>
-                        <h5 class="mt-4">Photography</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facere nihil</p>
-                        <a href="#" class="custom-link">
+                        <h5 class="mt-4">Efectividad</h5>
+                        <p>Exaltar la belleza e imagen de nuestras clientes es la efectividad de nuestro trabajo.</p>
+                        <!-- <a href="#" class="custom-link">
                             <span>Read More</span>
                             <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service py-5 px-4 border">
-                        <div class="service-icon">
-                            <i class="ri-pencil-ruler-2-line"></i>
-                        </div>
-                        <h5 class="mt-4">UX Design</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facere nihil</p>
-                        <a href="#" class="custom-link">
-                            <span>Read More</span>
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Work -->
-    <section id="work" class="section-padding section-connector">
+    <!-- services -->
+    <section id="services" class="services section-padding section-connector">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12" data-aos="fade-up" data-aos-delay="100">
                     <div class="setion-title text-center">
-                        <h1>Work</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci architecto dignissimos saepe iste soluta. Aperiam exercitationem doloribus soluta.</p>
+                        <h1 class="text-script">Nuestros</h1>
+                        <h1 class="text-serif">Servicios</h1>
                         <div class="line"></div>
                     </div>
                 </div>
             </div>
-            <div class="row g-2">
-                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="row g-2" data-aos-delay="100">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-up">
                     <div class="project">
-                        <img src="./assets/images/p-1.jpg" alt="">
+                        <img src="./assets/images/services/service-1.jpg" alt="">
                         <div class="content">
-                            <a href="./assets/images/p-1.jpg" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+                            <a href="./assets/images/services/service-1.jpg" data-fancybox="gallery" class="btn btn-outline-light">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-up">
                     <div class="project">
-                        <img src="./assets/images/p-2.jpg" alt="">
+                        <img src="./assets/images/services/service-2.jpg" alt="">
                         <div class="content">
-                            <a href="./assets/images/p-2.jpg" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+                            <a href="./assets/images/services/service-2.jpg" data-fancybox="gallery" class="btn btn-outline-light">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-up">
                     <div class="project">
-                        <img src="./assets/images/p-3.jpg" alt="">
+                        <img src="./assets/images/services/service-3.jpg" alt="">
                         <div class="content">
-                            <a href="./assets/images/p-3.jpg" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+                            <a href="./assets/images/services/service-3.jpg" data-fancybox="gallery" class="btn btn-outline-light">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-up">
                     <div class="project">
-                        <img src="./assets/images/p-4.jpg" alt="">
+                        <img src="./assets/images/services/service-4.jpg" alt="">
                         <div class="content">
-                            <a href="./assets/images/p-4.jpg" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+                            <a href="./assets/images/services/service-4.jpg" data-fancybox="gallery" class="btn btn-outline-light">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-up">
                     <div class="project">
-                        <img src="./assets/images/p-5.jpg" alt="">
+                        <img src="./assets/images/services/service-5.jpg" alt="">
                         <div class="content">
-                            <a href="./assets/images/p-5.jpg" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+                            <a href="./assets/images/services/service-5.jpg" data-fancybox="gallery" class="btn btn-outline-light">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-up">
                     <div class="project">
-                        <img src="./assets/images/p-6.jpg" alt="">
+                        <img src="./assets/images/services/service-6.jpg" alt="">
                         <div class="content">
-                            <a href="./assets/images/p-6.jpg" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+                            <a href="./assets/images/services/service-6.jpg" data-fancybox="gallery" class="btn btn-outline-light">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-up">
+                    <div class="project">
+                        <img src="./assets/images/services/service-7.jpg" alt="">
+                        <div class="content">
+                            <a href="./assets/images/services/service-7.jpg" data-fancybox="gallery" class="btn btn-outline-light">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-up">
+                    <div class="project">
+                        <img src="./assets/images/services/service-8.jpg" alt="">
+                        <div class="content">
+                            <a href="./assets/images/services/service-8.jpg" data-fancybox="gallery" class="btn btn-outline-light">Ver más</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section-padding pb-0">
+        <!-- <div class="section-padding pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-12" data-aos="fade-up" data-aos-delay="100">
@@ -302,78 +305,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Work -->
-    <section id="resume" class="section-padding section-connector">
-        <div class="container">
-            <div class="row">
-                <div class="col-12" data-aos="fade-up" data-aos-delay="100">
-                    <div class="setion-title text-center">
-                        <h1>Education & Experiance</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci architecto dignissimos saepe iste soluta. Aperiam exercitationem doloribus soluta.</p>
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row gy-5">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-12" data-aos="fade-up" data-aos-delay="100">
-                            <div class="eduexp p-5 pt-0">
-                                <h5>Univercity of Boston, Computer Science</h5>
-                                <small class="text-brand">2010 - 2016</small>
-                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem ducimus minima.</p>
-                            </div>
-                        </div>
-                        <div class="col-12" data-aos="fade-up" data-aos-delay="200">
-                            <div class="eduexp p-5 pt-0">
-                                <h5>Masters in UI Animations</h5>
-                                <small class="text-brand">2016 - 2018</small>
-                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem ducimus minima.</p>
-                            </div>
-                        </div>
-                        <div class="col-12" data-aos="fade-up" data-aos-delay="300">
-                            <div class="eduexp p-5 pt-0 pb-0">
-                                <h5>Graduate in Infromation Technologye</h5>
-                                <small class="text-brand">2016 - 2018</small>
-                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem ducimus minima.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-12" data-aos="fade-up" data-aos-delay="400">
-                            <div class="eduexp p-5 pt-0">
-                                <h5>Front End Developer, Freelance</h5>
-                                <small class="text-brand">2010 - 2016</small>
-                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem ducimus minima.</p>
-                            </div>
-                        </div>
-                        <div class="col-12" data-aos="fade-up" data-aos-delay="500">
-                            <div class="eduexp p-5 pt-0">
-                                <h5>Website Developer, Google</h5>
-                                <small class="text-brand">2016 - 2018</small>
-                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem ducimus minima.</p>
-                            </div>
-                        </div>
-                        <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                            <div class="eduexp p-5 pt-0 pb-0">
-                                <h5>Wireframe Designer, Dribbble</h5>
-                                <small class="text-brand">2016 - 2018</small>
-                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem ducimus minima.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- Blog -->
-    <section id="blog" class="section-padding section-connector">
+    <!-- <section id="blog" class="blog section-padding section-connector">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -426,42 +362,80 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Contact -->
-    <section id="contact" class="section-connector">
-        <div class="container section-padding">
-            <div class="row">
-                <div class="col-12">
-                    <div class="setion-title text-center" data-aos="fade-up" data-aos-delay="100">
-                        <h1>Contact</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci architecto dignissimos saepe iste soluta. Aperiam exercitationem doloribus soluta.</p>
-                        <div class="line"></div>
+    <section id="contact" class="contact section-connector">
+        <div class="ms_contact_section contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <!-- section heading start -->
+                    <div class="section_heading">
+                        <div class="heading_div">
+                            <h1 class="text-contact">Contáctanos
+                            </h1>
+                        </div>
+                        <div class="music_icon">
+                            <img src="images/icon/map_pin.png" alt="">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-8" data-aos="fade-up" data-aos-delay="200">
-                    <form action="#" class="row g-3">
-                        <div class="form-group col-md-4">
-                            <input type="text" class="form-control" placeholder="Name">
+                    <!-- section heading end -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mapouter">
+                                <div class="gmap_canvas" style="border-radius: 4rem;"><iframe id="gmap_canvas"
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d835.8865947564326!2d-74.02647502275512!3d4.740653265752528!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8f41579a769f%3A0x105dc1ebdbaf565a!2sFlorecer%20espa%20de%20u%C3%B1as!5e0!3m2!1ses!2sco!4v1659945155601!5m2!1ses!2sco"
+                                        frameborder="0" scrolling="no" marginheight="0" width="100%" height="400px"
+                                        marginwidth="0"></iframe>
+                                    <style>
+                                        .mapouter {
+                                            position: relative;
+                                            text-align: right;
+                                            height: auto;
+                                            width: 100%;
+                                        }
+                                    </style><a href="https://www.embedgooglemap.net"></a>
+                                    <style>
+                                        .gmap_canvas {
+                                            overflow: hidden;
+                                            background: none !important;
+                                            height: auto;
+                                            width: 100%;
+                                        }
+                                    </style>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group col-md-4">
-                            <input type="text" class="form-control" placeholder="Phone Number">
+                        <div class="form">
+                            <div class="icons-container">
+                                <div class="icons">
+                                    <i class="fas fa-map"></i>
+                                    <h3>Dirección:</h3>
+                                    <p>Cll. 163A #8c-29</p>
+                                    <a href="https://goo.gl/maps/NjLUJdYBeRrReZnw8" target="_blank"
+                                        class="btn btn-contact">Ver en Google Maps</a>
+                                </div>
+                                <div class="icons">
+                                    <i class="fas fa-envelope"></i>
+                                    <h3>Email:</h3>
+                                    <p>florecerbrillaconnosotros@gmail.com</p>
+                                    <a href="mailto:florecerbrillaconnosotros@gmail.com?" target="_blank"
+                                        class="btn btn-contact">Enviar correo</a>
+                                </div>
+                                <div class="icons">
+                                    <i class="fas fa-phone"></i>
+                                    <h3>Celular:</h3>
+                                    <p>+57 320 284 4903</p>
+                                    <a href="tel:+573202844903" target="_blank" class="btn btn-contact">Llamar</a>
+                                </div>
+                                <div class="icons">
+                                    <i class="fas fa-clock"></i>
+                                    <h3>Horarios:</h3>
+                                    <p>Lunes a Domingo:<b><br> 09:00 a.m - 09:00 p.m.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group col-md-4">
-                            <input type="email" class="form-control" placeholder="Email Address">
-                        </div>
-                        <div class="form-group col-md-12">
-                            <input type="text" class="form-control" placeholder="Enter Subject">
-                        </div>
-                        <div class="form-group col-md-12">
-                            <textarea name="" class="form-control" placeholder="Enter Your Message" rows="4"></textarea>
-                        </div>
-                        <div class="form-group text-center col-md-12">
-                            <button class="btn btn-brand">Send Message</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -470,37 +444,33 @@
                 <div class="container">
                     <div class="row gy-5">
                         <div class="col-md-4">
-                            <h4><a href="#" class="text-white">Harley Quinn</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam accusantium vero sunt!</p>
+                            <a class="navbar-brand" href="#home"><img class="logo-design" id="img-logo" src="./assets/images/svg/logo-semi-white.svg"></a>
+                            <p class="text-footer">La vida es bella, pero tu piel, manicura y cabello lo son más.</p>
                             <ul class="navbar-nav flex-row">
                                 <li class="nav-item">
-                                    <a class="social-icon" href="#"><i class="ri-dribbble-line"></i></a>
+                                    <a class="social-icon" href="https://www.instagram.com/florecerspadeunas/" target="a_blank"><i class="ri-instagram-line"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="social-icon" href="#"><i class="ri-github-line"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="social-icon" href="#"><i class="ri-instagram-line"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="social-icon" href="#"><i class="ri-youtube-line"></i></a>
+                                    <a class="social-icon" href="https://www.facebook.com/florecerespadeunas" target="a_blank"><i class="ri-facebook-line"></i></a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-md-3 ms-auto">
-                            <h4>Quick Links</h4>
+                            <h4>Enlaces rápidos</h4>
                             <ul>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a class="nav-link" href="#home"><span class="iconify" data-icon="ic:baseline-arrow-forward"></span>Inicio</a></li>
+                                <li><a class="nav-link" href="#about"><span class="iconify" data-icon="ic:baseline-arrow-forward"></span>Nosotros</a></li>
+                                <li><a class="nav-link" href="#services"><span class="iconify" data-icon="ic:baseline-arrow-forward"></span>Servicios</a></li>
+                                <!-- <li><a class="nav-link" href="#blog"><span class="iconify" data-icon="ic:baseline-arrow-forward"></span>Noticias</a></li> -->
+                                <li><a class="nav-link" href="#contact"><span class="iconify" data-icon="ic:baseline-arrow-forward"></span>Contácto</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3">
                             <h4>Contact</h4>
                             <ul>
-                                <li>Email: Harley@example.com</li>
-                                <li>Phone: (+933-444-556)</li>
-                                <li>Address: Jezero Crater, Mars</li>
+                                <li><a class="nav-link" href="mailto:florecerbrillaconnosotros@gmail.com" target="a_blank"><span class="iconify" data-icon="charm:mail"></span> florecerbrillaconnosotros@gmail.com</a></li>
+                                <li><a class="nav-link" href="tel:+573202844903" target="a_blank"><span class="iconify" data-icon="ic:baseline-phone-in-talk"></span> +57 320 284 4903</a></li>
+                                <li><a class="nav-link" href="https://goo.gl/maps/NjLUJdYBeRrReZnw8" target="a_blank"><span class="iconify" data-icon="ic:baseline-map"></span> Cll. 163A #8c-29</a></li>
                             </ul>
                         </div>
                     </div>
@@ -526,6 +496,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="./assets/js/jquery.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="./assets/js/owl-crousel/owl.carousel.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/app.js"></script>

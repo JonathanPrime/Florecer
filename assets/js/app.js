@@ -1,8 +1,10 @@
 window.onscroll = function() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0 ) {
         document.getElementById('navbar').classList.add('scrolled');
+		document.getElementById('img-logo').src = '../assets/images/svg/logo-black.svg';
     } else {
         document.getElementById('navbar').classList.remove('scrolled');
+		document.getElementById('img-logo').src = '../assets/images/svg/logo-white.svg';
     }
 }
 
