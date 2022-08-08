@@ -173,6 +173,7 @@ img {
 
 .navbar-brand {
     font-size: 24px;
+    width: 48%;
     font-weight: 700;
     color: var(--c-dark);
 }
@@ -874,6 +875,13 @@ footer ul li {
 		width: 85% !important;
 	 }
      .logo-design {
-        width: 35%;
+        width: 50%;
+     }
+}
+
+@media(max-width:400px){
+	/*-- slider css --*/
+     .logo-design {
+        width: 75%;
      }
 }
