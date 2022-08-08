@@ -46,7 +46,7 @@ $('.home_slider').owlCarousel({
 	margin:0,
 	items:1,
 	singleItem:true,
-	autoplay:true,
+	autoplay:false,
 	autoplayTimeout:6000,
 	autoplaySpeed:1000,
 	smartSpeed:1500,
@@ -70,5 +70,5 @@ $('.home_slider').owlCarousel({
 	animateIn:'slideup',
 	animateOut:'slidedown',
 	touchDrag:true,
-	mouseDrag:false,
+	mouseDrag:true,
 })
