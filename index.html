@@ -8,6 +8,7 @@
     <title>Florecer - Spa de uñas</title>
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="icon" type="image/x-icon" href="assets/images/svg/icon.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -16,7 +17,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home"><img class="logo-design" id="img-logo" src="./assets/images/svg/logo-semi-white.svg"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler" id="navbar-to" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -491,6 +492,26 @@
             </div>
         </footer>
     </section>
+
+    <div class="nav-bottom">
+        <div class="popup-whatsapp fadeIn">
+           <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                 <i class="material-icons icon-font-color">close</i>
+              </button>
+              <p>Hola 🤩, ¡Puedes contactarnos por nuestro canal de Whatsapp! 💅🏼.</p>
+           </div>
+           <div class="content-whatsapp -bottom">
+              <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+              <button class="send-msPopup" id="send-btn" type="button">
+                 <i class="material-icons icon-font-color--black">send</i>
+              </button>
+           </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+           <img class="icon-whatsapp" src="https://cdn-icons-png.flaticon.com/512/134/134937.png">
+        </button>
+        <div class="circle-anime"></div>
+     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
