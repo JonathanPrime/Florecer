@@ -47,7 +47,7 @@ $('.home_slider').owlCarousel({
 	margin:0,
 	items:1,
 	singleItem:true,
-	autoplay:false,
+	autoplay:true,
 	autoplayTimeout:6000,
 	autoplaySpeed:1000,
 	smartSpeed:1500,
@@ -70,8 +70,8 @@ $('.home_slider').owlCarousel({
 	},
 	animateIn:'slideup',
 	animateOut:'slidedown',
-	touchDrag:true,
-	mouseDrag:true,
+	touchDrag:false,
+	mouseDrag:false,
 });
 
 popupWhatsApp = () => {
@@ -99,9 +99,9 @@ popupWhatsApp = () => {
    });
 
    /* Open pop-up in 15 seconds */
-   setTimeout(() => {
+   /* setTimeout(() => {
      popup.classList.toggle('is-active-whatsapp-popup');
-   }, 8000);
+   }, 8000); */
 
 }
 
