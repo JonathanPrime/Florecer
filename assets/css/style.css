@@ -166,8 +166,8 @@ img {
     color: var(--c-dark);
 }
 
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active  {
+.nav-link:hover,
+.nav-link.active  {
     color: var(--c-brand);
 }
 
@@ -702,19 +702,20 @@ owl-item {
   
   .contact .row .form .icons-container .icons h3 {
     padding: 1rem 0;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     color:  var(--c-dark) !important;
   }
 
   .btn-contact {
     display: inline-block !important;
-    margin-top: 1rem !important;
+    font-family: 'Montserrat-bold' !important;
     cursor: pointer !important;
+    font-weight: bold;
     color:  var(--c-dark) !important;
     border: 0.2rem solid var(--c-brand) !important;
     background: no-repeat !important;
-    font-size: 15px !important;
+    font-size: 14px !important;
     border-radius: 1rem !important;
     padding: 1rem 3rem !important;
   }
@@ -1029,6 +1030,9 @@ footer ul li {
      .logo-design {
         width: 30%;
      }
+     .text-header-2{
+		width: 30% !important;
+	 }
 }
 
 @media (min-width:992px) and (max-width:1600px){
@@ -1036,7 +1040,7 @@ footer ul li {
 		width: 50% !important;
 	 }
 	 .text-header-2{
-		width: 45% !important;
+		width: 38% !important;
 	 }
 	 .text-header-3{
 		width: 40% !important;

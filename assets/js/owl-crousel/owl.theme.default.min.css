@@ -9,7 +9,7 @@
 }
 
 .owl-theme .owl-nav {
-    margin-top: -4rem;
+    display: none;
 }
 
 .owl-theme .owl-nav [class*=owl-] {
