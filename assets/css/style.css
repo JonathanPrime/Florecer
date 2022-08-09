@@ -67,16 +67,16 @@ h6,
 }
 
 h5 {
-    font-size: 30px !important;
+    font-size: 20px !important;
 }
 
 p {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 a {
     text-decoration: none !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
     transition: var(--transition) !important;
 }
 
@@ -678,8 +678,11 @@ owl-item {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 2rem;
     margin-bottom: 3rem;
+  }
+
+  .text-ubication {
+    text-align: center;
   }
   
   .contact .row .form .icons-container .icons {
@@ -701,8 +704,8 @@ owl-item {
   }
   
   .contact .row .form .icons-container .icons h3 {
-    padding: 1rem 0;
-    font-size: 16px;
+    padding: 1rem 0rem 0;
+    font-size: 14px;
     text-transform: uppercase;
     color:  var(--c-dark) !important;
   }
@@ -717,7 +720,7 @@ owl-item {
     background: no-repeat !important;
     font-size: 14px !important;
     border-radius: 1rem !important;
-    padding: 1rem 3rem !important;
+    padding: 0.8rem 1rem !important;
   }
 
   .btn-contact:hover {
@@ -1085,6 +1088,9 @@ footer ul li {
 		margin: 5px;
 		display:inline-block;
     } 
+    .contact .row .form .icons-container {
+        flex-wrap: nowrap;
+    } 
 }
 
 @media(max-width:768px){
@@ -1101,6 +1107,9 @@ footer ul li {
      .logo-design {
         width: 50%;
      }
+     .owl-theme .owl-nav {
+        display: none !important;
+    }
 }
 
 @media(max-width:400px){
@@ -1108,4 +1117,7 @@ footer ul li {
      .logo-design {
         width: 75%;
      }
+     .contact .row .form .icons-container {
+        flex-wrap: wrap;
+    } 
 }
