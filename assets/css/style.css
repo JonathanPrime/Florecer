@@ -113,6 +113,13 @@ img {
     display: inline-block;
 }
 
+.line-footer {
+    width: 60px;
+    height: 2px;
+    background-color: var(--c-brand);
+    display: inline-block;
+}
+
 .section-connector {
     position: relative;
 }
